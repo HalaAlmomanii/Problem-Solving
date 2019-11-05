@@ -192,10 +192,12 @@ finalresult.push(sec[result2[1]])
 // console.log(sec[result2[1]])
 if(finalresult.length>0)
 return finalresult
+
+else
+return "Not_found"
 }
 
-if(result2.length===0)
-return "not found"
+
 
 }
 
@@ -203,6 +205,11 @@ return "not found"
 }
 
  ScaleBalancing( ["[5, 9]", "[1, 2, 6, 7]"]  )
+
+
+
+
+
 
 
 
