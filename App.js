@@ -115,6 +115,7 @@
 //   }
 
 
+// // -----------------------------------------------------------------
 
 
 // Q8 
@@ -189,6 +190,7 @@ finalresult.push(sec[result2[0]])
 finalresult.push(sec[result2[1]])
 // console.log(sec[result2[0]])
 // console.log(sec[result2[1]])
+if(finalresult.length>0)
 return finalresult
 }
 
@@ -201,10 +203,6 @@ return "not found"
 }
 
  ScaleBalancing( ["[5, 9]", "[1, 2, 6, 7]"]  )
-
-
-
-
 
 
 
