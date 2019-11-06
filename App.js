@@ -126,95 +126,105 @@
 
 
 
-function ScaleBalancing(strArr){
+// function ScaleBalancing(strArr){
 
-let fisrtindex=strArr[0]
-let secindex=strArr[1]
-fisrt=JSON.parse(fisrtindex)
-sec=JSON.parse(secindex)
-// console.log(fisrt[1])
-let diff=Math.abs(fisrt[0]-fisrt[1])
+// let fisrtindex=strArr[0]
+// let secindex=strArr[1]
+// fisrt=JSON.parse(fisrtindex)
+// sec=JSON.parse(secindex)
 
-let result=sec.includes(diff)
-// console.log(result)
-if(result===true)
-// console.log( diff)
-return diff;
-else 
-{
- let y=""
-for(i=0;i<sec.length;i++)
-{
-for(z=0;z<sec.length;z++)
-{
-  if(i!==z)
-  {
-  if(sec[i]+sec[z]===diff)
+// let diff=Math.abs(fisrt[0]-fisrt[1])
 
-  {y=sec[i]+","+sec[z]}
+// let result=sec.includes(diff)
 
-  }
-}
+// if(result===true)
 
-}
-if(y.length >0)
-// console.log(y)
-return y;
+// return diff;
+// else 
+// {
+//  let y=""
+// for(i=0;i<sec.length;i++)
+// {
+// for(z=0;z<sec.length;z++)
+// {
+//   if(i!==z)
+//   {
+//   if(sec[i]+sec[z]===diff)
 
-else
-{
-array1=[]
-array2=[]
-result2=[]
-for(i=0;i<sec.length;i++)
-{
-array1.push(fisrt[0]+sec[i])
-array2.push(fisrt[1]+sec[i])
-// console.log(hala1)
-// console.log(hala2)
-}
-for(i=0;i<array1.length;i++)
-{
-  for(z=0;z<array1.length;z++)
-  {
-  if(array1[i]===array2[z])
-  {result2.push(i)
-    result2.push(z)
-  }
+//   {y=sec[i]+","+sec[z]}
+
+//   }
+// }
+
+// }
+// if(y.length >0)
+
+// return y;
+
+// else
+// {
+// array1=[]
+// array2=[]
+// result2=[]
+// for(i=0;i<sec.length;i++)
+// {
+// array1.push(fisrt[0]+sec[i])
+// array2.push(fisrt[1]+sec[i])
+
+// }
+// for(i=0;i<array1.length;i++)
+// {
+//   for(z=0;z<array1.length;z++)
+//   {
+//   if(array1[i]===array2[z])
+//   {result2.push(i)
+//     result2.push(z)
+//   }
  
-  }
-}
-// console.log(result2)
-let finalresult=[]
-finalresult.push(sec[result2[0]])
-finalresult.push(sec[result2[1]])
-// console.log(sec[result2[0]])
-// console.log(sec[result2[1]])
-if(finalresult.length>0)
-return finalresult
+//   }
+// }
 
-else
-return "Not_found"
-}
+// let finalresult=[]
+// finalresult.push(sec[result2[0]])
+// finalresult.push(sec[result2[1]])
 
+// if(finalresult.length>0)
+// return finalresult
+
+// else
+// return "Not_found"
+// }
 
 
-}
+
+// }
 
 
-}
+// }
 
- ScaleBalancing( ["[5, 9]", "[1, 2, 6, 7]"]  )
-
+//  ScaleBalancing( ["[5, 9]", "[1, 2, 6, 7]"]  )
 
 
 
 
+// // -----------------------------------------------------------------
 
 
+// Q9
+//  Alphabet Soup
+//  Have the function AlphabetSoup(str) take the str string parameter being passed and return the string with the letters in alphabetical order (ie. hello becomes ehllo). Assume numbers and punctuation symbols will not be included in the string. 
 
 
+// function AlphabetSoup(str) { 
 
+//   var array = str.split("");
+//   string=array.sort()
+//   return string.toString();
+ 
+
+// }
+   
+// console.log(AlphabetSoup("hala"))
 
 
 
