@@ -229,7 +229,28 @@
 
 
 
+// // -----------------------------------------------------------------
 
+
+// Q10
+
+//  Median of Two Sorted Arrays
+// There are two sorted arrays nums1 and nums2 of size m and n respectively.
+// Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+// You may assume nums1 and nums2 cannot be both empty.
+
+// function MedianofTwoArrays(arr1,arr2) { 
+
+//   let arr3= [...arr1,...arr2]
+//   arr3.sort(function(a, b){return a - b});
+  
+//   return arr3.length %2!==0?arr3[parseInt(arr3.length/2)]:(arr3[parseInt(arr3.length/2)]+arr3[parseInt((arr3.length/2)+1)])/2
+   
+  
+//   }
+     
+//   console.log(MedianofTwoArrays([1,2],[3, 4]))
+  
 
 
 
