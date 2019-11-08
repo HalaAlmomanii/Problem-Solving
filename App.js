@@ -252,9 +252,77 @@
 //   console.log(MedianofTwoArrays([1,2],[3, 4]))
   
 
+// // -----------------------------------------------------------------
 
 
+// Q11
+// Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+// Symbol       Value
+// I             1
+// V             5
+// X             10
+// L             50
+// C             100
+// D             500
+// M             1000
+// For example, two is written as II in Roman numeral, just two one's added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.
+// Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+// I can be placed before V (5) and X (10) to make 4 and 9. 
+// X can be placed before L (50) and C (100) to make 40 and 90. 
+// C can be placed before D (500) and M (1000) to make 400 and 900.
+// Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
 
+
+//  function intToRoman (num) {
+//   let  result=""
+//     let x=[
+//     {name:'I',value:1},
+//     {name:'IV',value:4},
+//     {name:'V',value:5},
+//     {name:'IX',value:9},
+//     {name:'X',value:10},
+//     {name:'XL',value:40},
+//     {name:'L',value:50},
+//     {name:'XC',value:90},
+//     {name:'C',value:100},
+//     {name:'CD',value:400},
+//     {name:'D',value:500},
+//     {name:'CM',value:900},
+//     {name:'M',value:1000}
+// ]
+    
+  
+    
+
+//     while(num>0)
+//     {
+//         for(i=0;i<x.length;i++)
+//         {
+//         if(num-x[i].value<0 && num<1000)
+//        { 
+//            num=num-x[i-1].value;
+           
+//         result=result+x[i-1].name
+//         break
+//        }
+//        else if(num>=1000 && x[i].value===1000)
+//        {
+        
+//            num=num-x[i].value;
+//            result=result+x[i].name
+          
+
+
+//        }
+      
+   
+//     }
+
+//     }
+//     return result
+
+//  }
+// console.log(intToRoman (1994))
 
 
 
