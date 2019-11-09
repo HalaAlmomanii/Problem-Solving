@@ -328,16 +328,73 @@
 
 
 
+// / // -----------------------------------------------------------------
+
+// Q12  Two Sum
+
+// Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+// Example:
+
+// Given nums = [2, 7, 11, 15], target = 9,
+
+// Because nums[0] + nums[1] = 2 + 7 = 9,
+// return [0, 1].
+
+
+function twosum(nums, target) {
+   
+   let  index=[]
+  
+
+        for(i=0;i<nums.length;i++)
+        {
+         
+
+
+
+      
+          
+      
+               if(nums.includes(target-nums[i])&&nums[i]!==(target-nums[i]))
+              {
+                 index.push(i)
+                 
+              }
+
+
+              else if(nums.includes(target-nums[i])&&nums[i]===(target-nums[i]))
+              {
+                if( nums.indexOf(nums[i])!==i)
+                 {
+                 
+                   
+                    index.push(i) 
+                    index.push(nums.indexOf(nums[i])) 
+                     
+                 }
+                 
+              
+              
+
+            
+
+              
+        }
+       
+       
+    }
+
+return index
+
+}
 
 
 
 
-
-
-
-
-
-
+console.log(twosum([0,3,4,0], 0))
 
 
 
