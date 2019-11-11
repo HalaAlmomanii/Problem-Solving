@@ -344,13 +344,13 @@
 // return [0, 1].
 
 
-function twosum(nums, target) {
+// function twosum(nums, target) {
    
-   let  index=[]
+//    let  index=[]
   
 
-        for(i=0;i<nums.length;i++)
-        {
+//         for(i=0;i<nums.length;i++)
+//         {
          
 
 
@@ -358,23 +358,23 @@ function twosum(nums, target) {
       
           
       
-               if(nums.includes(target-nums[i])&&nums[i]!==(target-nums[i]))
-              {
-                 index.push(i)
+//                if(nums.includes(target-nums[i])&&nums[i]!==(target-nums[i]))
+//               {
+//                  index.push(i)
                  
-              }
+//               }
 
 
-              else if(nums.includes(target-nums[i])&&nums[i]===(target-nums[i]))
-              {
-                if( nums.indexOf(nums[i])!==i)
-                 {
+//               else if(nums.includes(target-nums[i])&&nums[i]===(target-nums[i]))
+//               {
+//                 if( nums.indexOf(nums[i])!==i)
+//                  {
                  
                    
-                    index.push(i) 
-                    index.push(nums.indexOf(nums[i])) 
+//                     index.push(i) 
+//                     index.push(nums.indexOf(nums[i])) 
                      
-                 }
+//                  }
                  
               
               
@@ -382,22 +382,105 @@ function twosum(nums, target) {
             
 
               
-        }
+//         }
        
        
-    }
+//     }
 
-return index
+// return index
 
-}
-
-
-
-
-console.log(twosum([0,3,4,0], 0))
+// }
 
 
 
 
+// console.log(twosum([0,3,4,0], 0))
 
 
+
+
+// / // -----------------------------------------------------------------
+
+// Q13Palindrome Number
+
+
+// Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+// Example 1:
+// Input: 121
+// Output: true
+// Example 2:
+// Input: -121
+// Output: false
+// Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+
+// function isPalindrome (x) {
+//   x=x+""
+//   let result=""
+//   let y=x.split('')
+//      x=x.split('').reverse()
+  
+//      console.log(x)
+//      console.log(y)
+//      for(i=0;i<y.length;i++)
+     
+//      {  
+//        if(x[i]!==y[i])
+//        { result=false
+       
+//       return result}
+//      }
+//      return true 
+      
+     
+     
+//  };
+// console.log(isPalindrome(1000021))
+
+
+
+// / // -----------------------------------------------------------------
+
+// Q14 Reverse Integer
+
+
+// Given a 32-bit signed integer, reverse digits of an integer.
+
+// Example 1:
+
+// Input: 123
+// Output: 321
+// Example 2:
+
+// Input: -123
+// Output: -321
+// Example 3:
+
+// Input: 120
+// Output: 21
+// Note:
+// Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
+
+
+//   function reverse(x) {
+
+      
+      
+  
+    
+//   let first=x
+//    x=x.toString()
+//   x= x.split('')
+//  x= x.reverse()
+//  x= x.join('')
+
+//    if(first<0)
+//     { let result=  parseInt(x) * Math.sign(-1) 
+//        return (result <= 0x7fffffff && result >= -0x80000000) ? result : 0;}
+  
+//    else if(first>=0)
+//       {  
+//           let result=  parseInt(x)
+//  return (result <= 0x7fffffff && result >= -0x80000000) ? result : 0
+  
+// };
+// }
