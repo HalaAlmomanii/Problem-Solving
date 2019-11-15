@@ -526,4 +526,123 @@
     
 // }
 
-// console.log(searchInsert([1,2,4],3))
+// console.log(searchInsert([1,2,4],3)) 
+
+
+
+// / // -----------------------------------------------------------------
+
+// Q16. Longest Common Prefix
+
+
+// Write a function to find the longest common prefix string amongst an array of strings.
+
+// If there is no common prefix, return an empty string "".
+
+// Example 1:
+
+// Input: ["flower","flow","flight"]
+// Output: "fl"
+// Example 2:
+
+// Input: ["dog","racecar","car"]
+// Output: ""
+// Explanation: There is no common prefix among the input strings.
+
+// function longestCommonPrefix(strs) {
+//         let arr=[]
+//         let chart=""
+//         let prefix=""
+//         let result=[]
+       
+//         arr=strs.sort(function(a, b){
+     
+//       return a.length - b.length;
+//     })
+        
+    
+        
+//           result=arr[0].split("")
+        
+        
+//         for(i=0;i<result.length;i++)
+//             {
+//             for(j=1;j<arr.length;j++)
+                
+//           {  if(arr[j].includes(result[i]))
+//                 prefix=true
+//         else
+//             prefix=false
+//           }
+            
+//         if(prefix===true)
+//             chart=chart+result[i]
+//             }
+//         return chart
+            
+        
+//     };
+//     console.log(longestCommonPrefix(["flower","flow","flight"])) 
+
+//  function longestCommonPrefix(strs) {
+  
+    
+
+//     let test
+//     let chart=""
+// let result=strs[0]
+// let prefix=""
+
+//     if(strs.length===1)
+//         return strs[0]
+   
+//     if(strs.length===0)
+//         return""
+     
+    
+   
+//    for(let i=0;i<result.length;i++)
+//          {
+//          for(let j=1;j<strs.length;j++)
+        
+//        {  
+//            if(strs[j][i]===strs[0][i])
+             
+//                {  prefix=true
+                
+//                 test =i
+               
+//                 }
+
+//      else
+         
+//         { prefix=false
+//          break;
+//         }
+           
+//        }
+       
+//             if(prefix===true )
+//                 {
+//                   if(chart.length<=1 &&test===result.length-1 &&strs[0].length>2)
+//                      return ""
+                  
+//                     else
+//                  chart=chart+strs[0][i]
+//                 } 
+           
+             
+//          }
+//    if(chart.length===1 &&chart[0]!==result[0])
+//        return ""
+//    else
+//      return chart   
+
+// };
+   
+  
+
+
+
+
+// console.log(longestCommonPrefix(["flower","flow","flight"])) 
