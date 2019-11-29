@@ -180,7 +180,7 @@
 //   {result2.push(i)
 //     result2.push(z)
 //   }
- 
+
 //   }
 // }
 
@@ -220,10 +220,10 @@
 //   var array = str.split("");
 //   string=array.sort()
 //   return string.toString();
- 
+
 
 // }
-   
+
 // console.log(AlphabetSoup("hala"))
 
 
@@ -243,14 +243,14 @@
 
 //   let arr3= [...arr1,...arr2]
 //   arr3.sort(function(a, b){return a - b});
-  
+
 //   return arr3.length %2!==0?arr3[parseInt(arr3.length/2)]:(arr3[parseInt(arr3.length/2)]+arr3[parseInt((arr3.length/2)+1)])/2
-   
-  
+
+
 //   }
-     
+
 //   console.log(MedianofTwoArrays([1,2],[3, 4]))
-  
+
 
 // // -----------------------------------------------------------------
 
@@ -290,9 +290,9 @@
 //     {name:'CM',value:900},
 //     {name:'M',value:1000}
 // ]
-    
-  
-    
+
+
+
 
 //     while(num>0)
 //     {
@@ -301,21 +301,21 @@
 //         if(num-x[i].value<0 && num<1000)
 //        { 
 //            num=num-x[i-1].value;
-           
+
 //         result=result+x[i-1].name
 //         break
 //        }
 //        else if(num>=1000 && x[i].value===1000)
 //        {
-        
+
 //            num=num-x[i].value;
 //            result=result+x[i].name
-          
+
 
 
 //        }
-      
-   
+
+
 //     }
 
 //     }
@@ -345,23 +345,23 @@
 
 
 // function twosum(nums, target) {
-   
+
 //    let  index=[]
-  
+
 
 //         for(i=0;i<nums.length;i++)
 //         {
-         
 
 
 
-      
-          
-      
+
+
+
+
 //                if(nums.includes(target-nums[i])&&nums[i]!==(target-nums[i]))
 //               {
 //                  index.push(i)
-                 
+
 //               }
 
 
@@ -369,22 +369,22 @@
 //               {
 //                 if( nums.indexOf(nums[i])!==i)
 //                  {
-                 
-                   
+
+
 //                     index.push(i) 
 //                     index.push(nums.indexOf(nums[i])) 
-                     
+
 //                  }
-                 
-              
-              
 
-            
 
-              
+
+
+
+
+
 //         }
-       
-       
+
+
 //     }
 
 // return index
@@ -418,21 +418,21 @@
 //   let result=""
 //   let y=x.split('')
 //      x=x.split('').reverse()
-  
+
 //      console.log(x)
 //      console.log(y)
 //      for(i=0;i<y.length;i++)
-     
+
 //      {  
 //        if(x[i]!==y[i])
 //        { result=false
-       
+
 //       return result}
 //      }
 //      return true 
-      
-     
-     
+
+
+
 //  };
 // console.log(isPalindrome(1000021))
 
@@ -462,7 +462,7 @@
 
 
 //   function reverse(x) {
-    
+
 //   let first=x
 //    x=x.toString()
 //   x= x.split('')
@@ -472,12 +472,12 @@
 //    if(first<0)
 //     { let result=  parseInt(x) * Math.sign(-1) 
 //        return (result <= 0x7fffffff && result >= -0x80000000) ? result : 0;}
-  
+
 //    else if(first>=0)
 //       {  
 //           let result=  parseInt(x)
 //  return (result <= 0x7fffffff && result >= -0x80000000) ? result : 0
-  
+
 // };
 // }
 
@@ -488,7 +488,7 @@
 // / // -----------------------------------------------------------------
 
 
-// // Q15 Search Insert Position
+// Q15 Search Insert Position
 // Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
 // You may assume no duplicates in the array.
@@ -504,13 +504,13 @@
 
 // function searchInsert(nums, target) {
 //     let index
-    
+
 // for(i=0;i<nums.length;i++)
 //     {
 //         if(nums[i]===target)
 //         return i
 //     }
-   
+
 //     for(i=0;i<nums.length;i++)
 //         {
 //             if(target<nums[0])
@@ -519,11 +519,11 @@
 //                 return i+1
 //             if(target>nums[nums.length-1])
 //                 return nums.length
-            
+
 //         }
-        
-        
-    
+
+
+
 // }
 
 // console.log(searchInsert([1,2,4],3)) 
@@ -550,8 +550,8 @@
 // Explanation: There is no common prefix among the input strings.
 
 //  function longestCommonPrefix(strs) {
-  
-    
+
+
 
 //     let test
 //     let chart=""
@@ -560,43 +560,43 @@
 
 //     if(strs.length===1)
 //         return strs[0]
-   
+
 //     if(strs.length===0)
 //         return""
-     
-    
-   
+
+
+
 //    for(let i=0;i<result.length;i++)
 //          {
 //          for(let j=1;j<strs.length;j++)
-        
+
 //        {  
 //            if(strs[j][i]===strs[0][i])
-             
+
 //                {  prefix=true
-                
+
 //                 test =i
-               
+
 //                 }
 
 //      else
-         
+
 //         { prefix=false
 //          break;
 //         }
-           
+
 //        }
-       
+
 //             if(prefix===true )
 //                 {
 //                   if(chart.length<=1 &&test===result.length-1 &&strs[0].length>2)
 //                      return ""
-                  
+
 //                     else
 //                  chart=chart+strs[0][i]
 //                 } 
-           
-             
+
+
 //          }
 //    if(chart.length===1 &&chart[0]!==result[0])
 //        return ""
@@ -604,8 +604,8 @@
 //      return chart   
 
 // };
-   
-  
+
+
 
 
 
@@ -636,22 +636,22 @@
 //  function divide(dividend, divisor) {    
 //     if(dividend===0)
 //         return 0
-  
+
 //      if(dividend === -2147483648 && divisor === -1) return 2147483647;
 
 //     if(dividend === -2147483648 && divisor === 1) return dividend;
-  
+
 //     let x=divisor
 //     let y=dividend
- 
-    
+
+
 // let count =0
 // if(divisor<0)
 //     divisor=divisor*-1
-    
+
 //     if(dividend<0)
 //     dividend=dividend*-1
-    
+
 //     while(dividend!==0)
 //         {
 //             if(dividend-divisor>=0)
@@ -662,18 +662,18 @@
 //             else 
 //                 break;
 //         }
-   
 
-    
+
+
 //         if(x<0 && y<0 || x>0 &&y>0)
 //             {
 //                 return count 
-               
+
 //             }
-    
-    
+
+
 //     if(x<0 ||y<0)
-       
+
 // return count*-1
 
 // };
@@ -697,24 +697,24 @@
 //    function firstMissingPositive (nums) {
 
 //     let x
-    
+
 //     let myarr=nums.sort(function(a, b){return a - b})
-  
+
 //     if(nums.length===0)
 //         return 1
-    
+
 //     for(i=1;i<=myarr.length+1;i++)
 //         {
 //             if(myarr.includes(i))
 //                 {
-                    
+
 //                 }
-            
+
 //                 else
 //                  { x= i
 //                  break ;
 //                  }
-                
+
 //         }
 //     return x
 
@@ -741,13 +741,13 @@
 
 
 // function search(nums, target) {
-  
+
 //     for(i=0;i<nums.length;i++)
 //         {
 //     if(target===nums[i])
 //         return i
 //         }
-    
+
 //         return -1
 // };
 // console.log(search([4,5,6,7,0,1,2])
@@ -799,22 +799,105 @@
 //     {
 
 //         if(roman[s[i]]<roman[s[i+1]])
-        
+
 //         {
 //             result=result-roman[s[i]]
-        
-        
+
+
 //         }
 //         else
 //          { 
-      
+
 //         result=result+roman[s[i]]
-             
+
 //          }
-            
+
 //         }
-    
+
 
 //     return result
 // }
 //  console.log(romanToInt("IV"))
+
+
+
+// Q21.Sudoku board 
+// Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
+// Each row must contain the digits 1-9 without repetition.
+// Each column must contain the digits 1-9 without repetition.
+// Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.
+
+
+// function isValidSudoku(board) {
+//     // for each row and col
+//     let result = true;
+//     for (i = 0; i < 9; i++) {
+//       for (z = 0; z < 9; z++) {
+//         for (q = z + 1; q < 9; q++) {
+//           if (board[i][z] === board[i][q]) {
+//             return (result = false);
+//           } else if (board[z][i] === board[q][i]) {
+//             return (result = false);
+//           }
+//         }
+//       }
+//     }
+  
+//     // generate sub_matrix
+//     mat1 = [];
+//     mat2 = [];
+//     mat3 = [];
+//     mat4 = [];
+//     mat5 = [];
+//     mat6 = [];
+//     mat7 = [];
+//     mat8 = [];
+//     mat9 = [];
+//     submatrix = [];
+    
+//     for (i = 0; i < 9; i++) {
+//       for (z = 0; z < 3; z++) {
+//         if (i < 3) {
+//           mat1.push(board[i][z]);
+//           mat2.push(board[i][z + 3]);
+//           mat3.push(board[i][z + 6]);
+//         } else if (i >= 3 && i < 6) {
+//           mat4.push(board[i][z]);
+  
+//           mat5.push(board[i][z + 3]);
+  
+//           mat6.push(board[i][z + 6]);
+//         } else {
+//           mat7.push(board[i][z]);
+//           mat8.push(board[i][z + 3]);
+//           mat9.push(board[i][z + 6]);
+//         }
+//       }
+//     }
+  
+//     submatrix.push(mat1, mat2, mat3, mat4, mat5, mat6, mat7, mat8, mat9);
+  
+//     //check for submatrix
+//     for (i = 0; i < submatrix.length; i++) {
+//       for (q = 0; q < 9; q++) {
+//         for (z = q + 1; z < 8; z++) {
+//           if (submatrix[i][q] === submatrix[i][z]) {
+//             result = false;
+//             break;
+//           }
+//         }
+//       }
+//     }
+  
+//     return result;
+//   }
+  
+
+
+
+
+
+
+
+
+    
